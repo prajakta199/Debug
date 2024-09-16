@@ -1,0 +1,72 @@
+
+17:41:21 [browserstack_sdk.__init__][INFO] - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+
+17:41:21 [urllib3.connectionpool][DEBUG] - Starting new HTTPS connection (1): hub.browserstack.com:443
+
+17:41:22 [urllib3.connectionpool][DEBUG] - https://hub.browserstack.com:443 "GET /next_hubs HTTP/11" 200 93
+
+17:41:22 [browserstack_sdk.__init__][DEBUG] - Response from /next_hubs {'hubs': ['hub-aps.browserstack.com', 'hub-euw.browserstack.com', 'hub-apse.browserstack.com']}
+
+17:41:22 [urllib3.connectionpool][DEBUG] - Starting new HTTPS connection (1): hub-aps.browserstack.com:443
+
+17:41:22 [urllib3.connectionpool][DEBUG] - Starting new HTTPS connection (1): hub-euw.browserstack.com:443
+
+17:41:22 [urllib3.connectionpool][DEBUG] - Starting new HTTPS connection (1): hub-apse.browserstack.com:443
+
+17:41:22 [urllib3.connectionpool][DEBUG] - https://hub-aps.browserstack.com:443 "GET /check HTTP/11" 200 2
+
+17:41:22 [browserstack_sdk.__init__][DEBUG] - Latency of hub: hub-aps.browserstack.com is: 0.3652547499987122
+
+17:41:23 [urllib3.connectionpool][DEBUG] - https://hub-apse.browserstack.com:443 "GET /check HTTP/11" 200 2
+
+17:41:23 [browserstack_sdk.__init__][DEBUG] - Latency of hub: hub-apse.browserstack.com is: 0.8983630410002661
+
+17:41:23 [urllib3.connectionpool][DEBUG] - https://hub-euw.browserstack.com:443 "GET /check HTTP/11" 200 2
+
+17:41:23 [browserstack_sdk.__init__][DEBUG] - Latency of hub: hub-euw.browserstack.com is: 0.9333780420001858
+
+17:41:23 [browserstack_sdk.__init__][DEBUG] - Nearest hub allocated is: hub-aps.browserstack.com
+
+17:41:23 [browserstack_sdk.__init__][INFO] - Setting up for Browserstack, using framework: robot
+==============================================================================
+Test-3                                                                        
+==============================================================================
+
+17:41:23 [browserstack_sdk.__init__][INFO] - Completed setup!
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/prajaktapednekar/Documents/Debugging/MSRBC/robot-browserstack/tests/test-3.robot:5
+      Execute test    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/prajaktapednekar/Documents/Debugging/MSRBC/robot-browserstack/tests/test-3.robot:16
+      Open Session    ${test_caps}    ${website_url}
+      |  ${test_caps} = {'browser': 'safari'} (DotDict)
+      |  ${website_url} = https://bstackdemo.com (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/prajaktapednekar/Documents/Debugging/MSRBC/robot-browserstack/resources/KeywordsFile.robot:10
+      Open Browser    remote_url=${remote_url}    browser=chrome    desired_capabilities=${capabilities}    url=${test_url}
+      |  remote_url=${remote_url} = remote_url=http://localhost:4444/wd/hub (str)
+      |  desired_capabilities=${capabilities} = desired_capabilities={'browser': 'safari'} (str)
+      |  url=${test_url} = url=https://bstackdemo.com (str)
+______________________________________________________________________________
+BStack Sample Test 3                                                  | FAIL |
+Parent suite setup failed:
+WebDriverException: Message: Invalid username or password
+------------------------------------------------------------------------------
+BStack Sample Test 4                                                  | FAIL |
+Parent suite setup failed:
+WebDriverException: Message: Invalid username or password
+------------------------------------------------------------------------------
+Test-3                                                                | FAIL |
+Suite setup failed:
+WebDriverException: Message: Invalid username or password
+
+
+2 tests, 0 passed, 2 failed
+==============================================================================
+Output:  /Users/prajaktapednekar/Documents/Debugging/MSRBC/robot-browserstack/pabot_results/0/output.xml
+
+17:41:24 [browserstack_sdk.__init__][INFO] - Handling session close
+
+17:41:24 [browserstack_sdk.__init__][INFO] - All done!

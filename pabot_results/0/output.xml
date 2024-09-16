@@ -1,1 +1,60 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.4 on darwin)" generated="20240916 17:41:23.157" rpa="false" schemaversion="4">
+<suite id="s1" name="Test-3" source="/Users/prajaktapednekar/Documents/Debugging/MSRBC/robot-browserstack/tests/test-3.robot">
+<kw name="Execute test" type="SETUP">
+<kw name="Open Session" library="KeywordsFile">
+<arg>${test_caps}</arg>
+<arg>${website_url}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>remote_url=${remote_url}</arg>
+<arg>browser=chrome</arg>
+<arg>desired_capabilities=${capabilities}</arg>
+<arg>url=${test_url}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240916 17:41:23.184" level="WARN">desired_capabilities has been deprecated and removed. Please use options to configure browsers as per documentation.</msg>
+<msg timestamp="20240916 17:41:23.185" level="INFO">Opening browser 'chrome' to base url 'https://bstackdemo.com' through remote server at 'http://localhost:4444/wd/hub'.</msg>
+<msg timestamp="20240916 17:41:23.185" level="INFO">Completed setup!</msg>
+<msg timestamp="20240916 17:41:24.407" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240916 17:41:24.408" level="FAIL">WebDriverException: Message: Invalid username or password
+</msg>
+<status status="FAIL" starttime="20240916 17:41:23.184" endtime="20240916 17:41:24.419"/>
+</kw>
+<status status="FAIL" starttime="20240916 17:41:23.184" endtime="20240916 17:41:24.419"/>
+</kw>
+<status status="FAIL" starttime="20240916 17:41:23.184" endtime="20240916 17:41:24.419"/>
+</kw>
+<test id="s1-t1" name="BStack Sample Test 3" line="20">
+<status status="FAIL" starttime="20240916 17:41:24.420" endtime="20240916 17:41:24.420">Parent suite setup failed:
+WebDriverException: Message: Invalid username or password
+</status>
+</test>
+<test id="s1-t2" name="BStack Sample Test 4" line="23">
+<status status="FAIL" starttime="20240916 17:41:24.421" endtime="20240916 17:41:24.421">Parent suite setup failed:
+WebDriverException: Message: Invalid username or password
+</status>
+</test>
+<kw name="Close Session" library="KeywordsFile" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240916 17:41:24.422" endtime="20240916 17:41:24.426"/>
+</kw>
+<status status="PASS" starttime="20240916 17:41:24.422" endtime="20240916 17:41:24.426"/>
+</kw>
+<status status="FAIL" starttime="20240916 17:41:23.158" endtime="20240916 17:41:24.426">Suite setup failed:
+WebDriverException: Message: Invalid username or password
+</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Test-3">Test-3</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240916 17:41:23.184" level="WARN">desired_capabilities has been deprecated and removed. Please use options to configure browsers as per documentation.</msg>
+</errors>
+</robot>
