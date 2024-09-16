@@ -1,0 +1,37 @@
+# =============================
+# Set BrowserStack Credentials
+# =============================
+# Add your BrowserStack userName and accessKey here or set BROWSERSTACK_USERNAME and
+# BROWSERSTACK_ACCESS_KEY as env variables
+userName: BROWSERSTACK_USERNAME
+accessKey: BROWSERSTACK_ACCESS_KEY
+platforms:
+  - os: Windows
+    osVersion: 11
+    browserName: Chrome
+    browserVersion: latest
+    resolution: 1920x1080
+accessibility: true
+accessibilityOptions:
+  wcagVersion: wcag21aaa
+browserstackLocal: false
+browserStackLocalOptions:
+  forcelocal: false
+parallelsPerPlatform: 3
+buildName: Test Build F
+buildIdentifier: ${DATE_TIME}
+projectName: Accessibility E
+testObservability: true
+logLevel: debug
+networkLogs: true
+framework: robot
+env:
+  variables:
+    BROWSERSTACK_USERNAME: "prajakta_nwA7XY"
+    BROWSERSTACK_ACCESS_KEY: "JzQiG6tTy8pGxHexfxGs"
+    # Set to true when using Local.
+    BROWSERSTACK_LOCAL: "false"
+    # Set when using multiple Local instances.
+    BROWSERSTACK_LOCAL_IDENTIFIER: "IDENTIFIER_NAME"
+    # Set an appropriate build name as a best practice. This helps group tests under the same name for better visibility in the Automate dashboard.
+    BROWSERSTACK_BUILD_NAME: "BUILD_NAME"
