@@ -2,13 +2,13 @@
 Library         SeleniumLibrary
 Resource        ../resources/KeywordsFile.robot
 Resource        ../resources/TestCases.robot
-Test Setup      Execute test
-Test Teardown   Close Session
+Suite Setup      Execute test
+Suite Teardown   Close Session
 
 
 *** Variables ***
 ${website_url}=     https://bstackdemo.com
-&{test_caps}        browser=firefox
+&{test_caps}        browser=safari
 
 
 *** Keywords ***
@@ -17,7 +17,8 @@ Execute test
 
 
 *** Test Cases ***
-BStack Sample Test 2
+BStack Sample Test 3
     Add to Cart
 
-
+BStack Sample Test 4
+    Add to Cart
