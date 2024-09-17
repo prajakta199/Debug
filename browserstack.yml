@@ -1,0 +1,27 @@
+# =============================
+# Set BrowserStack Credentials
+# =============================
+# Add your BrowserStack userName and accessKey here or set BROWSERSTACK_USERNAME and
+# BROWSERSTACK_ACCESS_KEY as env variables
+userName: BROWSERSTACK_USERNAME
+accessKey: BROWSERSTACK_ACCESS_KEY
+platforms:
+  - os: Windows
+    osVersion: 11
+    browserName: Chrome
+    browserVersion: latest
+    resolution: 1920x1080
+accessibility: true
+accessibilityOptions:
+  wcagVersion: wcag21aaa
+browserstackLocal: false
+browserStackLocalOptions:
+  forcelocal: false
+parallelsPerPlatform: 3
+buildName: Test Build F
+buildIdentifier: ${DATE_TIME}
+projectName: Accessibility E
+testObservability: true
+logLevel: debug
+networkLogs: true
+framework: robot
