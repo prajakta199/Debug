@@ -1,0 +1,27 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.x  # Specify the Python version
+    commands:
+      - echo "Installing dependencies..."
+      - pip install -r requirements.txt  # Ensure you have a requirements.txt file with Robot Framework and other dependencies
+  pre_build:
+    commands:
+      - echo "Running pre-build tasks..."
+      # Add any pre-build commands if necessary
+  build:
+    commands:
+      - echo "Running Robot Framework tests..."
+      - robot --outputdir results tests/  # Adjust 'tests/' to your test directory
+  post_build:
+    commands:
+      - echo "Post-build tasks..."
+      - echo "Robot Framework tests completed. Check results in the 'results' directory."
+      # Optionally, you can run additional commands here
+
+artifacts:
+  files:
+    - results/**  # Include the results of the Robot Framework tests
+  base-directory: results  # Specify the directory where test results are stored
