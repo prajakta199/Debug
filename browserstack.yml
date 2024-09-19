@@ -14,13 +14,13 @@ platforms:
 accessibility: true
 accessibilityOptions:
   wcagVersion: wcag21aaa
-browserstackLocal: false
+browserstackLocal: true
 browserStackLocalOptions:
   forcelocal: false
 parallelsPerPlatform: 3
 buildName: Test Build F
 buildIdentifier: ${DATE_TIME}
-projectName: Accessibility E
+#projectName: Accessibilit
 testObservability: true
 logLevel: debug
 networkLogs: true
